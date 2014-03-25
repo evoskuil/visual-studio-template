@@ -16,9 +16,9 @@ These props files can be integrated into a Visual Studio `.vcxproj` file as foll
   </ImportGroup>
 ```
 
-The `$(ProjectDir)$(ProjectName).props` file is intended to be an independent file containing all unique properties for the project.
+The `$(ProjectDir)$(ProjectName).props` file is your custom file containing all unique properties for the project. Generally this is the set of includes, libraries, preprocessor statements and warning overrides.
 
-The following combinations are achieved by referencing the appropriate pair of properties files as shown above:
+The following combinations are achieved by referencing the desired build configuration, e.g. `DynamicDebug.props`, and platform properties, e.g. `Win32.props`, as shown above.
 
 **Dynamic libraries linked dynamically to CRT**
 ```
