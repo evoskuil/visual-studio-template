@@ -8,7 +8,8 @@ These props files can be integrated into a Visual Studio `.vcxproj` file as foll
 ```
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props"
-       Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+       Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" 
+       Label="LocalAppDataPlatform" />
     <Import Project="$(ProjectDir)$(ProjectName).props" />
     <Import Project="$(ProjectDir)..\properties\DynamicDebug.props" />
     <Import Project="$(ProjectDir)..\properties\Win32.props" />
