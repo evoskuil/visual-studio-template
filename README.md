@@ -20,31 +20,43 @@ The `$(ProjectDir)$(ProjectName).props` file is intended to be an independent fi
 
 The following combinations are achieved by referencing the appropriate pair of properties files as shown above:
 
-**Libraries**
+**Dynamic libraries linked dynamically to CRT**
 ```
 DebugDLL|Win32
 ReleaseDLL|Win32
 DebugDLL|x64
 ReleaseDLL|x64
+```
+**Static libraries linked using LTCG and statically to CRT**
+```
 DebugLTCG|Win32
 ReleaseLTCG|Win32
 DebugLTCG|x64
 ReleaseLTCG|x64
+```
+**Static libraries linked statically to CRT**
+```
 DebugLIB|Win32
 ReleaseLIB|Win32
 DebugLIB|x64
 ReleaseLIB|x64
 ```
-**Applications**
+**Applications linked dynamically to CRT**
 ```
 DebugDEXE|Win32
 ReleaseDEXE|Win32
 DebugDEXE|x64
 ReleaseDEXE|x64
+```
+**Applications linked using LTCG and statically to CRT**
+```
 DebugLEXE|Win32
 ReleaseLEXE|Win32
 DebugLEXE|x64
 ReleaseLEXE|x64
+```
+**Applications linked statically to CRT**
+```
 DebugSEXE|Win32
 ReleaseSEXE|Win32
 DebugSEXE|x64
