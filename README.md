@@ -5,7 +5,7 @@ Visual Studio project props common build scenarios.
 
 These props files can be integrated into a Visual Studio `.vcxproj` file as follows:
 
-```
+```xml
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">
     <Import Project="$(ProjectDir)..\..\properties\DebugDLL.props" />
     <Import Project="$(ProjectDir)..\..\properties\Output.props" />
@@ -15,7 +15,7 @@ These props files can be integrated into a Visual Studio `.vcxproj` file as foll
 
 A simpler (recommended) approach is to align Configuration names with the .`props` file names. This collapses to one `ImportGroup`, as follows:
 
-```
+```xml
   <ImportGroup>
     <Import Project="$(ProjectDir)..\..\properties\$(Configuration).props" />
     <Import Project="$(ProjectDir)..\..\properties\Output.props" />
