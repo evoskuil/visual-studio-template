@@ -29,7 +29,7 @@ The optional `Output.props` file changes the default Visual Studio build output 
 
 There is generally no good reason to change the `.props` files as overrides are possible within `$(ProjectName).props`. However if one desires to change the outputs the `Output.props` file can be independently dropped or replaced.
 
-Note that all `.props' files are assumed to be in a common directory, despite the repo structure.
+Note that all `.props` files are assumed to be in a common directory, despite the repo structure.
 
 The following combinations are achieved by referencing the desired build configuration (e.g. `DynamicDLL.props`) as shown above.
 
